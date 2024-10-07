@@ -1,10 +1,10 @@
-# Python code for Linear Search 
-def linear_search(arr, target):
-    for index in range(len(arr)):
-        if arr[index] == target:
+def linear_search(arr: list, target: int) -> int:
+    for index, element in enumerate(arr):
+        if element == target:
             return index
     return -1
 
+# Example usage
 arr = [10, 23, 45, 70, 11, 15]
 target = 70
 
